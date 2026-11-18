@@ -47,11 +47,14 @@
     }
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      grid-template-columns: repeat(2, 1fr);
       gap: 20px;
       list-style: none;
       margin: 0;
       padding: 0;
+    }
+    @media (max-width: 640px) {
+      .grid { grid-template-columns: 1fr; }
     }
     .card {
       display: flex;
@@ -113,46 +116,28 @@
       </li>
       <li>
         <a class="card disabled" aria-disabled="true">
-          <span class="icon">🐍</span>
+          <span class="icon">🤝</span>
           <span class="num">PROJECT 02</span>
-          <h2>클로드 활용 스네이크 게임</h2>
-          <p>Claude와 함께 만든 브라우저 스네이크 게임</p>
+          <h2>AI고객관리</h2>
+          <p>AI로 고객 정보와 상담 이력을 관리하는 고객관리 도구</p>
           <span class="badge">준비 중</span>
         </a>
       </li>
       <li>
         <a class="card disabled" aria-disabled="true">
-          <span class="icon">🙋</span>
+          <span class="icon">📖</span>
           <span class="num">PROJECT 03</span>
-          <h2>개인 프로파일</h2>
-          <p>나를 소개하는 개인 프로필 페이지</p>
+          <h2>제품사용설명서</h2>
+          <p>제품 사용법을 단계별로 안내하는 설명서 페이지</p>
           <span class="badge">준비 중</span>
         </a>
       </li>
       <li>
         <a class="card disabled" aria-disabled="true">
-          <span class="icon">📈</span>
+          <span class="icon">💰</span>
           <span class="num">PROJECT 04</span>
-          <h2>주식 일기</h2>
-          <p>매매 기록과 생각을 남기는 주식 투자 일기장</p>
-          <span class="badge">준비 중</span>
-        </a>
-      </li>
-      <li>
-        <a class="card disabled" aria-disabled="true">
-          <span class="icon">🦾</span>
-          <span class="num">PROJECT 05</span>
-          <h2>4축 로봇암 시뮬레이터</h2>
-          <p>4개 관절을 조작해 움직임을 확인하는 로봇팔 시뮬레이터</p>
-          <span class="badge">준비 중</span>
-        </a>
-      </li>
-      <li>
-        <a class="card disabled" aria-disabled="true">
-          <span class="icon">📚</span>
-          <span class="num">PROJECT 06</span>
-          <h2>이북(ebook) 쇼핑몰</h2>
-          <p>전자책을 둘러보고 장바구니에 담을 수 있는 쇼핑몰</p>
+          <h2>부자가계부</h2>
+          <p>수입과 지출을 기록하고 한눈에 살펴보는 가계부</p>
           <span class="badge">준비 중</span>
         </a>
       </li>
